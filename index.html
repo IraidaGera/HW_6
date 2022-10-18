@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="" method="post" class="form" enctype="multipart/form-data">
+        <form action="#" method="post" id="my_form" class="form" enctype="multipart/form-data" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(newFormData(document.getElementById('my_form')))).toString()));return false">
             <label for="name">Повне ім'я</label> 
             <input type="text" id="name" name="ima">
             <br>
