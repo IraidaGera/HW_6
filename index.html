@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" class="form">
+            <label for="name">Повне ім'я</label> 
+            <input type="text" id="name">
+            <br>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <br>
+            <label for="password">Пароль</label>
+            <input type="password" name="password">
+            <br>
+            <label for="password">Пароль ще раз</label>
+            <input type="password2" name="password2">
+            <br>
+            <ul>
+                <label for="female">Стать
+                    <li> <input type="radio" name="gender" value="female" id="female" checked> жіноча </li>
+                </label>    
+                <label for="male">
+                    <li> <input type="radio" name="gender" value="male" id="male"> чоловіча </li>
+                </label>  
+            </ul>
+            <label for="age" max="100">Вік</label>
+            <input type="text" id="age">
+            <br>
+    
+            <label for="courses"> Курси</label>
+                <select name="courses" id="courses">
+                    <option value="select">-=Виберіть курс=-</option>
+                    <option value="front">Front end</option>
+                    <option value="back">Back end</option>
+                    <option value="uix">UIX</option>
+                </select>
+            <br>
+    
+            <label for="adress">Повна адреса</label>
+            <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Країна, оегіон, місто/селище, вулиця"></textarea>
+            <br>
+
+            <input type="checkbox" id="check">
+            <label for="check">Я погоджуюсь з обробкою персональих данних</label>
+            <br>
+
+            <button type="button" name="clean">Очистити форму</button>
+            <button type="button" name="register">Зареєструватися</button>
+            
+        </form>
+
+        <fieldset>
+            <legend>Загальні данні</legend>
+            <label for="blocked">Заблоковане поле</label>
+            <input type="text" id="blocked" placeholder="Мене не можна змінювати" disabled>
+            <label for="some-text">Якийсь текст</label>
+            <input type="text" id="some-text" placeholder="Мене лише читати" readonly>
+            <label for="animal">Ім'я тваринки</label>
+            <input type="text" id="animal" placeholder="кіт Бегемот" required>
+            <label for="email">Ім'я тваринки</label>
+            <input type="email" id="email" placeholder="ivanov@domail.com">
+            <label for="password">Таємний пароль</label>
+            <input type="password" id="password">
+            <label for="date">Дата народження Франка</label>
+            <input type="date" id="date" placeholder="дд.мм.рррр">
+            <label for="age">Вік дерева</label>
+            <input type="number" id="age" max="100">
+            <ul>
+                <label for="female">Стать
+                    <li> <input type="radio" name="gender" value="female" id="female" checked> жіноча </li>
+                </label>    
+                <label for="male">
+                    <li> <input type="radio" name="gender" value="male" id="male"> чоловіча </li>
+                </label>  
+            </ul>
+            <input type="checkbox" id="fb" multiple>
+            <label for="fb">Facebook</label>
+            <input type="checkbox" id="insta" multiple>
+            <label for="insta">Instagramm</label>
+            <input type="checkbox" id="twit" multiple>
+            <label for="twit">Twitter</label>
+            <input type="checkbox" id="drible" multiple>
+            <label for="twit">Dribble</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Інша інформація</legend>
+            <label for="color">Улюблений колір сусіда</label>
+            <input type="color" id="color">
+            <legend>Телефон підтримки розробників</legend>
+            <input type="tel" value="38-000-000-00-00">
+            <label for="time">Час наступного заняття</label>
+            <input type="time" id="time">
+            <label for="link">Посилання на улюблений сайт</label>
+            <input type="urk" value="https://www.google.com/" id="link">
+            <label for="range">Число від 1 до 10</label>
+            <input type="range" value="10" min="1" max="10"  id="range">
+            <label for="foto">Завантаж картинку</label>
+            <input type="file" value="https://www.google.com/" id="link">
+        </fieldset>
+
+        <fieldset>
+            <legend>Не input-и</legend>
+            <label for="select">Улюблений напій</label>
+            <select name="" id="select">
+                <option value="1">Узвар</option>
+                <option value="2">Кава</option>
+                <option value="3">Текіла</option>
+            </select>
+            <label for="drinks">Улюблений напій</label>
+            <select name="drinks" id="drinks">
+                <optgroup label="Безалкогольні">
+                    <option>Кава</option>
+                    <option>Узвар</option>
+                    <option>Сок</option> 
+                </optgroup>
+                <optgroup label="Бухлішко">
+                   <option>Пиво</option>
+                   <option>Вино</option>
+                   <option>Ром</option>
+                   <option>Текіла</option>
+                </optgroup>  
+            </select>
+            <textarea name="any" id="any" cols="30" rows="6">Коментар на вільну тему</textarea>
+        </fieldset>
+            <fieldset>
+                <legend>Кнопки</legend>
+                <button>Відправити</button>
+                <button>Скинути</button>
+                <button>Просто кнопка</button>
+                <button>Я заблокована</button>
+            </fieldset>
+            
+        
+    </div>
+    
+    
+
+</body>
+</html>
