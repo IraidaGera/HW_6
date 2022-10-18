@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="" method="post" class="form">
+        <form action="" method="post" class="form" enctype="multipart/form-data">
             <label for="name">Повне ім'я</label> 
             <input type="text" id="name" name="ima">
             <br>
@@ -127,7 +127,7 @@
                     </optgroup>  
                 </select>
                 <label for="">Коментар на вільну тему</label>
-                <textarea name="any" id="any" cols="50" rows="6"></textarea>
+                <textarea name="any" id="any" cols="50" rows="6" <!-- with:50px; hights:40px; --!> </textarea>
             </fieldset>
                 <fieldset class="container">
                     <legend>Кнопки</legend>
