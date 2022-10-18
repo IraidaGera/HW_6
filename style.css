@@ -32,3 +32,8 @@ body {
     display: inline-block;
     margin: 0 19px;
 }
+
+label {
+    width: 250px;
+    display: inline-block;  
+}
