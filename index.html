@@ -11,10 +11,10 @@
     <div class="container">
         <form action="" method="post" class="form">
             <label for="name">Повне ім'я</label> 
-            <input type="text" id="name">
+            <input type="text" id="name" name="ima">
             <br>
             <label for="email">Email</label>
-            <input type="text" id="email">
+            <input type="text" name="email" id="email">
             <br>
             <label for="password">Пароль</label>
             <input type="password" name="password">
@@ -47,7 +47,7 @@
             <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Країна, оегіон, місто/селище, вулиця"></textarea>
             <br>
 
-            <input type="checkbox" id="check">
+            <input type="checkbox" name="adress" id="check">
             <label for="check">Я погоджуюсь з обробкою персональих данних</label>
             <br>
 
@@ -57,19 +57,19 @@
             <fieldset class="container">
                 <legend>Загальні данні</legend>
                 <label for="blocked">Заблоковане поле</label>
-                <input type="text" id="blocked" placeholder="Мене не можна змінювати" disabled>
+                <input type="text" name="blocked" id="blocked" placeholder="Мене не можна змінювати" disabled >
                 <label for="some-text">Якийсь текст</label>
-                <input type="text" id="some-text" placeholder="Мене лише читати" readonly>
+                <input type="text" name="readonly" id="some-text" placeholder="Мене лише читати" readonly>
                 <label for="animal">Ім'я тваринки</label>
-                <input type="text" id="animal" placeholder="кіт Бегемот" required>
+                <input type="text" name="ranimal" id="animal" placeholder="кіт Бегемот" required>
                 <label for="email">Ім'я тваринки</label>
-                <input type="email" id="email" placeholder="ivanov@domail.com">
+                <input type="email" name="email-1" id="email" placeholder="ivanov@domail.com">
                 <label for="password">Таємний пароль</label>
-                <input type="password" id="password">
+                <input type="password" name="pssword-2" id="password">
                 <label for="date">Дата народження Франка</label>
-                <input type="date" id="date" placeholder="дд.мм.рррр">
+                <input type="date" name="birth" id="date" placeholder="дд.мм.рррр">
                 <label for="age">Вік дерева</label>
-                <input type="number" id="age" max="100">
+                <input type="number" name="age" id="age" max="100">
                 <ul>
                     <label for="female">Стать
                         <li> <input type="radio" name="gender" value="female" id="female" checked> жіноча </li>
@@ -78,36 +78,36 @@
                         <li> <input type="radio" name="gender" value="male" id="male"> чоловіча </li>
                     </label>  
                 </ul>
-                <input type="checkbox" id="fb" multiple>
+                <input type="checkbox" name="media[]" id="fb" multiple>
                 <label for="fb">Facebook</label>
-                <input type="checkbox" id="insta" multiple>
+                <input type="checkbox" name="media[]" id="insta" multiple>
                 <label for="insta">Instagramm</label>
-                <input type="checkbox" id="twit" multiple>
+                <input type="checkbox" name="media[]" id="twit" multiple>
                 <label for="twit">Twitter</label>
-                <input type="checkbox" id="drible" multiple>
+                <input type="checkbox" name="media[]" id="drible" multiple>
                 <label for="twit">Dribble</label>
             </fieldset>
     
             <fieldset class="container">
                 <legend>Інша інформація</legend>
                 <label for="color">Улюблений колір сусіда</label>
-                <input type="color" id="color">
+                <input type="color" name="color" id="color">
                 <legend>Телефон підтримки розробників</legend>
-                <input type="tel" value="38-000-000-00-00">
+                <input type="tel" name="tel" value="38-000-000-00-00">
                 <label for="time">Час наступного заняття</label>
-                <input type="time" id="time">
+                <input type="time" name="klass" id="time">
                 <label for="link">Посилання на улюблений сайт</label>
-                <input type="urk" value="https://www.google.com/" id="link">
+                <input type="url" name="url" value="https://www.google.com/" id="link">
                 <label for="range">Число від 1 до 10</label>
-                <input type="range" value="10" min="1" max="10"  id="range">
+                <input type="range" name="range" value="10" min="1" max="10"  id="range">
                 <label for="foto">Завантаж картинку</label>
-                <input type="file" value="https://www.google.com/" id="link">
+                <input type="file" name="download" value="https://www.google.com/" id="link">
             </fieldset>
     
             <fieldset class="container">
                 <legend>Не input-и</legend>
                 <label for="select">Улюблений напій</label>
-                <select name="" id="select">
+                <select name="no-input" id="select">
                     <option value="1">Узвар</option>
                     <option value="2">Кава</option>
                     <option value="3">Текіла</option>
