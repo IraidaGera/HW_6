@@ -78,14 +78,19 @@
                         <li> <input type="radio" name="gender" value="male" id="male"> чоловіча </li>
                     </label>  
                 </ul>
-                <input type="checkbox" name="media[]" id="fb" multiple>
-                <label for="fb">Facebook</label>
-                <input type="checkbox" name="media[]" id="insta" multiple>
-                <label for="insta">Instagramm</label>
-                <input type="checkbox" name="media[]" id="twit" multiple>
-                <label for="twit">Twitter</label>
-                <input type="checkbox" name="media[]" id="drible" multiple>
-                <label for="twit">Dribble</label>
+                
+                    <legend name="media">Соціальні мережі </legend>
+                    
+                    <input type="checkbox" name="fb" id="fb" >
+                    <label for="fb">Facebook</label>
+                    <input type="checkbox" name="insta" id="insta" >
+                    <label for="insta">Instagramm</label>
+                    <input type="checkbox" name="twit" id="twit" >
+                    <label for="twit">Twitter</label>
+                    <input type="checkbox" name="drible" id="drible" >
+                    <label for="twit">Dribble</label>
+               
+                
             </fieldset>
     
             <fieldset class="container">
@@ -106,14 +111,14 @@
     
             <fieldset class="container">
                 <legend>Не input-и</legend>
-                <label for="select">Улюблений напій</label>
+                <label for="select[]" multiple>Улюблений напій</label>
                 <select name="no-input" id="select">
                     <option value="1">Узвар</option>
                     <option value="2">Кава</option>
                     <option value="3">Текіла</option>
                 </select>
                 <label for="drinks">Улюблений напій</label>
-                <select name="drinks" id="drinks">
+                <select name="drinks[]" id="drinks" multiple>
                     <optgroup label="Безалкогольні">
                         <option>Кава</option>
                         <option>Узвар</option>
