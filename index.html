@@ -47,8 +47,8 @@
             <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Країна, оегіон, місто/селище, вулиця"></textarea>
             <br>
 
-            <input type="checkbox" name="adress" id="check">
-            <label for="check">Я погоджуюсь з обробкою персональих данних</label>
+            <input type="checkbox" name="check" id="check" >
+            <label for="check" class="check">Я погоджуюсь з обробкою персональих данних</label>
             <br>
 
             <button type="button" name="clean">Очистити форму</button>
@@ -60,9 +60,9 @@
                 <input type="text" name="blocked" id="blocked" placeholder="Мене не можна змінювати" disabled >
                 <label for="some-text">Якийсь текст</label>
                 <input type="text" name="readonly" id="some-text" placeholder="Мене лише читати" readonly>
-                <label for="animal">Ім'я тваринки</label>
+                <label for="animal">Ім'я тваринки</label><span>*</span>
                 <input type="text" name="ranimal" id="animal" placeholder="кіт Бегемот" required>
-                <label for="email">Ім'я тваринки</label>
+                <label for="email">Email</label>
                 <input type="email" name="email-1" id="email" placeholder="ivanov@domail.com">
                 <label for="password">Таємний пароль</label>
                 <input type="password" name="pssword-2" id="password">
@@ -81,13 +81,13 @@
                 
                     <legend name="media">Соціальні мережі </legend>
                     
-                    <input type="checkbox" name="fb" id="fb" >
+                    <input type="checkbox" name="fb[]" id="fb" >
                     <label for="fb">Facebook</label>
-                    <input type="checkbox" name="insta" id="insta" >
+                    <input type="checkbox" name="insta[]" id="insta" >
                     <label for="insta">Instagramm</label>
-                    <input type="checkbox" name="twit" id="twit" >
+                    <input type="checkbox" name="twit[]" id="twit" >
                     <label for="twit">Twitter</label>
-                    <input type="checkbox" name="drible" id="drible" >
+                    <input type="checkbox" name="drible[]" id="drible" >
                     <label for="twit">Dribble</label>
                
                 

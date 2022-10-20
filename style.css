@@ -37,3 +37,10 @@ label {
     width: 250px;
     display: inline-block;  
 }
+span{
+    color: red;
+}
+.check {
+    width: auto;
+    display: inline;
+}
